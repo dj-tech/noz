@@ -54,7 +54,7 @@ function notifyMe_two() {
   // want to be respectful there is no need to bother them any more.
 }
 for (i = 0; i < 10; i++) {
-notifyMe_one()
+	notifyMe_one()
 	var terreno = promptNum("TERRENO IN mq (metri quadrati)");
 	if (terreno < 0) {
 	    soldi = soldi + terreno;
@@ -87,30 +87,30 @@ notifyMe_one()
 		prodotti = soldi;
 	}
 
-    	notifyMe_two()
-    	function rombe() {
-        for (var i = 0; i < 12; i++) {
-            alert('Deep magic in: '+i);
-        }
-      	rombe();
+  	notifyMe_two()
+    function rombe() {
+    	for (var i = 0; i < 12; i++) {
+    		alert('Deep magic in: '+i);
+      }
+    rombe();
 
-    	function attack() {
-        	alert("Deep magic FORCE ATTACK");
-        	prodotti = prodotti - 10;
-        	soldi = soldi - 10;
-        	terreno = terreno - 5;
-    	}
-    	function defise() {
-        	alert("Deep magic FORCE SIMPLE");
-        	prodotti = prodotti - 2;
-        	soldi = soldi - 2;
-        	terreno = terreno - 1;
-    	}
-    	if (soldi > 60) {
-        	defise();
-    	} else {
-        	attack();
-    	}
+    function attack() {
+      alert("Deep magic FORCE ATTACK");
+    	prodotti = prodotti - 10;
+    	soldi = soldi - 10;
+    	terreno = terreno - 5;
+    }
+    function defise() {
+     	alert("Deep magic FORCE SIMPLE");
+     	prodotti = prodotti - 2;
+     	soldi = soldi - 2;
+     	terreno = terreno - 1;
+    }
+    if (soldi > 60) {
+     	defise();
+   	} else {
+     	attack();
+    }
 }
 alert("END with this value:");
 alert("terreno");
