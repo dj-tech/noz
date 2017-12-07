@@ -112,7 +112,7 @@ for (i = 0; i < 10; i++) {
    	} else {
      	attack();
     }
-}
+}}
 alert("END with this value:");
 alert("terreno");
 alert(terreno);
@@ -120,4 +120,4 @@ alert("prodotti");
 alert(prodotti);
 alert("soldi");
 alert(soldi);
-}
+
