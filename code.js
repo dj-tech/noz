@@ -87,31 +87,30 @@ for (i = 0; i < 10; i++) {
 		prodotti = soldi;
 	}
 
-    notifyMe_two()
-    function rombe() {
+    	notifyMe_two()
+    	function rombe() {
         for (var i = 0; i < 12; i++) {
             alert('Deep magic in: '+i);
         }
-    }
-    rombe();
+      	rombe();
 
-    function attack() {
-        alert("Deep magic FORCE ATTACK");
-        prodotti = prodotti - 10;
-        soldi = soldi - 10;
-        terreno = terreno - 5;
-    }
-    function defise() {
-        alert("Deep magic FORCE SIMPLE");
-        prodotti = prodotti - 2;
-        soldi = soldi - 2;
-        terreno = terreno - 1;
-    }
-    if (soldi > 60) {
-        defise();
-    } else {
-        attack();
-    }
+    	function attack() {
+        	alert("Deep magic FORCE ATTACK");
+        	prodotti = prodotti - 10;
+        	soldi = soldi - 10;
+        	terreno = terreno - 5;
+    	}
+    	function defise() {
+        	alert("Deep magic FORCE SIMPLE");
+        	prodotti = prodotti - 2;
+        	soldi = soldi - 2;
+        	terreno = terreno - 1;
+    	}
+    	if (soldi > 60) {
+        	defise();
+    	} else {
+        	attack();
+    	}
 }
 alert("END with this value:");
 alert("terreno");
@@ -120,4 +119,5 @@ alert("prodotti");
 alert(prodotti);
 alert("soldi");
 alert(soldi);
+
     
