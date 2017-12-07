@@ -28,7 +28,7 @@ function notifyMe_one() {
   // At last, if the user has denied notifications, and you 
   // want to be respectful there is no need to bother them any more.
 }
-function notifyM_two() {
+function notifyMe_two() {
   // Let's check if the browser supports notifications
   if (!("Notification" in window)) {
     alert("This browser does not support desktop notification");
