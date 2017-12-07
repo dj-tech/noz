@@ -1,3 +1,4 @@
+
 /*
   NoZ
   by DjTech
@@ -91,7 +92,7 @@ for (i = 0; i < 10; i++) {
     function rombe() {
     	for (var i = 0; i < 12; i++) {
     		alert('Deep magic in: '+i);
-      }
+        }
     rombe();
 
     function attack() {
@@ -119,5 +120,4 @@ alert("prodotti");
 alert(prodotti);
 alert("soldi");
 alert(soldi);
-
-    
+}
