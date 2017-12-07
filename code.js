@@ -1,10 +1,9 @@
-
 /*
   NoZ
   by DjTech
 */
 var soldi = 100;
-function notifyMe_one() {
+function notifyMeone() {
   // Let's check if the browser supports notifications
   if (!("Notification" in window)) {
     alert("This browser does not support desktop notification");
@@ -29,7 +28,7 @@ function notifyMe_one() {
   // At last, if the user has denied notifications, and you 
   // want to be respectful there is no need to bother them any more.
 }
-function notifyMe_two() {
+function notifyMetwo() {
   // Let's check if the browser supports notifications
   if (!("Notification" in window)) {
     alert("This browser does not support desktop notification");
@@ -54,8 +53,9 @@ function notifyMe_two() {
   // At last, if the user has denied notifications, and you 
   // want to be respectful there is no need to bother them any more.
 }
+
 for (i = 0; i < 10; i++) {
-	notifyMe_one()
+	notifyMeone()
 	var terreno = promptNum("TERRENO IN mq (metri quadrati)");
 	if (terreno < 0) {
 	    soldi = soldi + terreno;
@@ -88,7 +88,7 @@ for (i = 0; i < 10; i++) {
 		prodotti = soldi;
 	}
 
-  	notifyMe_two()
+  	notifyMetwo()
     function rombe() {
     	for (var i = 0; i < 12; i++) {
     		alert('Deep magic in: '+i);
