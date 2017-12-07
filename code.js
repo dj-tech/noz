@@ -54,7 +54,7 @@ function notifyM_two() {
   // want to be respectful there is no need to bother them any more.
 }
 for (i = 0; i < 10; i++) {
-    	notifyMe_one()
+notifyMe_one()
 	var terreno = promptNum("TERRENO IN mq (metri quadrati)");
 	if (terreno < 0) {
 	    soldi = soldi + terreno;
