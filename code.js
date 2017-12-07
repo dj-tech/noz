@@ -3,8 +3,58 @@
   by DjTech
 */
 var soldi = 100;
+function notifyMe_one() {
+  // Let's check if the browser supports notifications
+  if (!("Notification" in window)) {
+    alert("This browser does not support desktop notification");
+  }
+
+  // Let's check whether notification permissions have already been granted
+  else if (Notification.permission === "granted") {
+    // If it's okay let's create a notification
+    var notification = new Notification("Hi there!");
+  }
+
+  // Otherwise, we need to ask the user for permission
+  else if (Notification.permission !== "denied") {
+    Notification.requestPermission(function (permission) {
+      // If the user accepts, let's create a notification
+      if (permission === "granted") {
+        var notification = new Notification("É ora di coltivare!");
+      }
+    });
+  }
+
+  // At last, if the user has denied notifications, and you 
+  // want to be respectful there is no need to bother them any more.
+}
+function notifyM_two() {
+  // Let's check if the browser supports notifications
+  if (!("Notification" in window)) {
+    alert("This browser does not support desktop notification");
+  }
+
+  // Let's check whether notification permissions have already been granted
+  else if (Notification.permission === "granted") {
+    // If it's okay let's create a notification
+    var notification = new Notification("Hi there!");
+  }
+
+  // Otherwise, we need to ask the user for permission
+  else if (Notification.permission !== "denied") {
+    Notification.requestPermission(function (permission) {
+      // If the user accepts, let's create a notification
+      if (permission === "granted") {
+        var notification = new Notification("DEEP MAGIC è pronto per la battaglia!");
+      }
+    });
+  }
+
+  // At last, if the user has denied notifications, and you 
+  // want to be respectful there is no need to bother them any more.
+}
 for (i = 0; i < 10; i++) {
-    
+    	notifyMe_one()
 	var terreno = promptNum("TERRENO IN mq (metri quadrati)");
 	if (terreno < 0) {
 	    soldi = soldi + terreno;
@@ -37,7 +87,7 @@ for (i = 0; i < 10; i++) {
 		prodotti = soldi;
 	}
 
-	
+    notifyMe_two()
     function rombe() {
         for (var i = 0; i < 12; i++) {
             alert('Deep magic in: '+i);
