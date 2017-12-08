@@ -4,7 +4,7 @@
 */
 
 var soldi = 100;
-a = confirm("Prima volta su HubFIX?")
+/*a = confirm("Prima volta su HubFIX?")
 if (a == true):
 	$.ajax({
   		method: "POST",
@@ -14,6 +14,7 @@ if (a == true):
   	.done(function( msg ) {
     		alert( "Data Saved: " + msg );
 	});
+	*/
 function notifyMeone() {
   // Let's check if the browser supports notifications
   if (!("Notification" in window)) {
@@ -133,8 +134,8 @@ alert("prodotti");
 alert(prodotti);
 alert("soldi");
 alert(soldi);
-
-if (a == true) {
+/*
+if (a == false) {
 $.ajax({
   	method: "POST",
   	url: "some.php",
@@ -144,3 +145,4 @@ $.ajax({
     		alert( "Data Saved: " + msg );
 	});
 }
+*/
