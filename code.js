@@ -3,6 +3,11 @@
   by DjTech
 */
 
+//image("logo", "https://code.org/images/logo.png");
+playSound("assets/sotto.mp3", true);
+image("id", "assets/man.png");
+image("id2", "assets/farm.png");
+image("id3", "assets/boss.png");
 var soldi = 100;
 /*a = confirm("Prima volta su HubFIX?")
 if (a == true):
@@ -76,9 +81,9 @@ for (i = 0; i < 10; i++) {
 	}
 	var prodotti = terreno;
 	if (soldi < 0) {
- 		alert("GAME OVER! banca rotta!!!");
-  		soldi = 0;
-  		terreno = 0;
+			alert("GAME OVER! banca rotta!!!");
+				soldi = 0;
+				terreno = 0;
 		prodotti = 0;
 	}
 	alert("terreno");
@@ -100,32 +105,33 @@ for (i = 0; i < 10; i++) {
 		prodotti = soldi;
 	}
 
-  notifyMetwo()
-  function rombe() {
-    for (var i = 0; i < 12; i++) {
-    	alert('Deep magic in: '+i);
-    }
-  }
-  rombe();
+	 notifyMetwo()
+	 function rombe() {
+	   for (var i = 0; i < 12; i++) {
+	   	alert('Deep magic in: '+i);
+	   	playSound("sound://category_animals/cat.mp3", false);
+	   }
+	 }
+	 rombe();
 
 
-    function attack() {
-      alert("Deep magic FORCE ATTACK");
+	   function attack() {
+	     alert("Deep magic FORCE ATTACK");
     	prodotti = prodotti - 10;
     	soldi = soldi - 10;
     	terreno = terreno - 5;
-    }
-    function defise() {
-     	alert("Deep magic FORCE SIMPLE");
-     	prodotti = prodotti - 2;
-     	soldi = soldi - 2;
-     	terreno = terreno - 1;
-    }
-    if (soldi > 60) {
-     	defise();
-   	} else {
-     	attack();
-    }
+	   }
+	   function defise() {
+	    	alert("Deep magic FORCE SIMPLE");
+	    	prodotti = prodotti - 2;
+	    	soldi = soldi - 2;
+	    	terreno = terreno - 1;
+	   }
+	   if (soldi > 60) {
+	    	defise();
+	  	} else {
+	    	attack();
+	   }
 }
 alert("END with this value:");
 alert("terreno");
@@ -146,3 +152,4 @@ $.ajax({
 	});
 }
 */
+image("id", "https://code.org/images/logo.png");
