@@ -2,7 +2,18 @@
   NoZ
   by DjTech
 */
+
 var soldi = 100;
+a = confirm("Prima volta su HubFIX?")
+if (a == true):
+	$.ajax({
+  		method: "POST",
+  		url: "some.php",
+  		data: { name: prompt("username"), private_point: [terreno,prodotti,soldi] }
+	})
+  	.done(function( msg ) {
+    		alert( "Data Saved: " + msg );
+	});
 function notifyMeone() {
   // Let's check if the browser supports notifications
   if (!("Notification" in window)) {
@@ -123,3 +134,11 @@ alert(prodotti);
 alert("soldi");
 alert(soldi);
 
+$.ajax({
+  method: "POST",
+  url: "some.php",
+  data: { name: prompt("username"), private_point: [terreno,prodotti,soldi] }
+})
+  .done(function( msg ) {
+    alert( "Data Saved: " + msg );
+});
