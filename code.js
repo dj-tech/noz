@@ -88,12 +88,13 @@ for (i = 0; i < 10; i++) {
 		prodotti = soldi;
 	}
 
-  	notifyMetwo()
-    function rombe() {
-    	for (var i = 0; i < 12; i++) {
-    		alert('Deep magic in: '+i);
-        }
-    rombe();
+  notifyMetwo()
+  function rombe() {
+    for (var i = 0; i < 12; i++) {
+    	alert('Deep magic in: '+i);
+    }
+  }
+  rombe();
 
     function attack() {
       alert("Deep magic FORCE ATTACK");
@@ -112,7 +113,7 @@ for (i = 0; i < 10; i++) {
    	} else {
      	attack();
     }
-}}
+}
 alert("END with this value:");
 alert("terreno");
 alert(terreno);
