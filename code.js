@@ -96,6 +96,7 @@ for (i = 0; i < 10; i++) {
   }
   rombe();
 
+
     function attack() {
       alert("Deep magic FORCE ATTACK");
     	prodotti = prodotti - 10;
