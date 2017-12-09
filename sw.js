@@ -5,5 +5,5 @@
  By dj-tech
 */
 if ('serviceWorker' in navigator) {
- navigator.serviceWorker.register('/code.js')
+ navigator.serviceWorker.register('dj-tech.github.io/noz/sw.js')
 }
