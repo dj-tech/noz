@@ -20,9 +20,9 @@ if (a == true):
     		alert( "Data Saved: " + msg );
 	});
 	*/
-function slp() {
-  sleep(2000)
-}
+//functionfunction slp() {
+//  sleep(2000)
+//}
 function notifyMeone() {
   // Let's check if the browser supports notifications
   if (!("Notification" in window)) {
@@ -82,7 +82,7 @@ for (i = 0; i < 10; i++) {
 	} else {
 	    soldi = soldi - terreno;
 	}
-	slp()
+	//slpslp()
 	var prodotti = terreno;
 	if (soldi < 0) {
 			alert("GAME OVER! banca rotta!!!");
@@ -90,24 +90,26 @@ for (i = 0; i < 10; i++) {
 				terreno = 0;
 		prodotti = 0;
 	}
-	slp()
+	
+//slpslp
+//slpslp()
 	alert("terreno");
-	slp()
+//	slp()
 	alert(terreno);
-	slp()
+//	slp()
 	alert("prodotti");
-	slp()
+//	slp()
 	alert(prodotti);
-	slp()
+//	slp()
 	alert("soldi");
-	slp()
+//	slp()
 	alert(soldi);
-	slp()
+//	slp()
 
 	//scambio merce per aumento variabile 
 
 	var question_1 = promptNum("SCAMBI: nessuno [0], TprodottiCsoldi[1], TsoldiCprodotti [2]. scegli [0/1/2]");
-	slp()
+//	slp()
 	if (question_1 == 2) {
 		prodotti = soldi;
 		soldi = prodotti;
@@ -116,19 +118,19 @@ for (i = 0; i < 10; i++) {
 		soldi = prodotti;
 		prodotti = soldi;
 	}
-	slp()
+//	slp()
 
 	 notifyMetwo()
-	slp()
+//	slp()
 	 function rombe() {
 	   for (var i = 0; i < 12; i++) {
 	   	alert('Deep magic in: '+i);
 	   	playSound("sound://category_animals/cat.mp3", false);
 	   }
 	 }
-	slp()
+//	slp()
 	 rombe();
-	slp()
+//	slp()
 
 
 	   function attack() {
@@ -137,20 +139,20 @@ for (i = 0; i < 10; i++) {
     	soldi = soldi - 10;
     	terreno = terreno - 5;
 	   }
-	slp()
+//	slp()
 	   function defise() {
 	    	alert("Deep magic FORCE SIMPLE");
 	    	prodotti = prodotti - 2;
 	    	soldi = soldi - 2;
 	    	terreno = terreno - 1;
 	   }
-	slp()
+//	slp()
 	   if (soldi > 60) {
 	    	defise();
 	  	} else {
 	    	attack();
 	   }
-	slp()
+//	slp()
 }
 alert("END with this value:");
 alert("terreno");
