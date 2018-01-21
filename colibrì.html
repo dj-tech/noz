@@ -17,11 +17,15 @@
 		<script>
 			c = 0
 			while (true) {
-				if (prompt("Seleziona 1 per giocare ancora o 2 per finire.") == "1") {
-					settimeout(function() {c = c + 1},10000)
+				if (prompt("Seleziona 1 per giocare ancora (1 anche per iniziare) o 2 per finire.") == "1") {
+					settimeout(function() {c = c + 1},1000);
+					MyWindow=window.open('https://studio.code.org/c/466767108','MyWindow1',width=600,height=300); // return false;
+					MyWindow=window.open('https://studio.code.org/projects/sports/_CUcr2I5UGqHgEkdJxPfu5uLCFAbHG-RWcOtc6NioOM/','MyWindow2',width=600,height=300); // return false;
+					MyWindow=window.open('https://studio.code.org/projects/minecraft_designer/-5E00tAsUJ9SxYx3j1eJob0_Ovoyukghsi5fZKiVxMM/','MyWindow3',width=600,height=300); // return false;
+					MyWindow=window.open('https://www.google.com/url?q=https://dj-tech.github.io/noz/&sa=D&ust=1516652371173000&usg=AFQjCNFGBsLi-DXPiK9hBcwx5X3rgrakQA','MyWindow4',width=600,height=300); // return false;
 				}
 				else {
-					alert("Punteggio ottenuto: "+c)
+					alert("Punteggio ottenuto: "+c);
 				}	
 			}
 		</script>
